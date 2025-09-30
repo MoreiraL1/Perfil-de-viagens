@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  
+  & img {
+    width: 20.5rem;
+
+  }
+
+}
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+@media (width >= 80em) {
+  main {
+    padding: 2rem;
+
+
+    & img{
+      width: 17.875rem;
+    }
+  }
+  .img-container {
+    gap: 1.5rem;
+  }
+}

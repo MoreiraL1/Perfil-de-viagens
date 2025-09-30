@@ -1,0 +1,33 @@
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  font: var(--text-sm);
+
+  & > div {
+    display:flex;
+    gap: 1.25rem;
+  }
+
+}
+
+@media (width >= 80em) {
+
+  footer{
+    display:flex;
+    width: 80rem;
+    font: var(--text-sm);
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+
+}
+
+footer span:nth-child(1) {
+  margin-right: auto;
+
+}
+
+}

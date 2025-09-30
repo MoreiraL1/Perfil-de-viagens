@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+
+  line-height: 0%;
+  background-color: var(--surface-color);
+
+  & #logo {
+    display: flex;
+    margin-right: auto;
+    
+    & img {
+      width: 10.125rem;
+      height: 2rem;
+    }
+  }
+  
+  & ul {
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+
+    & li:last-child img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+@media (width >= 80em) {
+  nav {
+        width: 80rem;
+
+    padding: 2rem 1.5rem;
+
+    #logo {
+      margin-right: auto;
+    }
+    & ul {
+      gap: 1rem;
+     
+    }
+  }
+}
